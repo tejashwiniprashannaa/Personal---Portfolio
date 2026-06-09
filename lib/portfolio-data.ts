@@ -4,7 +4,7 @@ export const profile = {
   location: "Coimbatore, India",
   email: "tejashwiniprashannaa@gmail.com",
   github: "https://github.com/tejashwiniprashannaa",
-  linkedin: "https://www.linkedin.com/in/tejashwiniprashannaa",
+  linkedin: "https://www.linkedin.com/in/tejashwiniiirp/",
   summary:
     "B.Tech CSBS (2024-2028) student at Sri Krishna College of Engineering and Technology (CGPA: 8.5/10). Practical full-stack experience engineering scalable web apps using Java, Spring Boot, React, and PostgreSQL. Focused on clear system architecture, secure authentication workflows, and solving complex DSA problem sets.",
 }
