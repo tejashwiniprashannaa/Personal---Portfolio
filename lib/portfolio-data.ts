@@ -10,19 +10,46 @@ export const profile = {
 }
 
 export const skillGroups: { label: string; items: string[] }[] = [
-  { label: "Languages", items: ["Java", "JavaScript", "SQL"] },
+  {
+    label: "Languages",
+    items: ["Java", "JavaScript", "SQL"],
+  },
   {
     label: "Backend Frameworks",
-    items: ["Spring Boot", "Spring Security", "Spring Data JPA", "JWT", "BCrypt", "REST APIs"],
+    items: [
+      "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
+      "JWT",
+      "BCrypt",
+      "REST APIs",
+    ],
   },
   {
     label: "Frontend UI",
-    items: ["React.js", "HTML5", "CSS3", "Bootstrap", "Axios", "Recharts"],
+    items: [
+      "React.js",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Axios",
+      "Recharts",
+    ],
   },
-  { label: "Databases", items: ["PostgreSQL", "MySQL", "MongoDB"] },
+  {
+    label: "Databases",
+    items: ["PostgreSQL", "MySQL", "MongoDB"],
+  },
   {
     label: "Tools & Pipelines",
-    items: ["Git", "GitHub", "Postman", "Maven", "VS Code", "IntelliJ IDEA"],
+    items: [
+      "Git",
+      "GitHub",
+      "Postman",
+      "Maven",
+      "VS Code",
+      "IntelliJ IDEA",
+    ],
   },
   {
     label: "Core Theory",
@@ -74,31 +101,43 @@ export const projects: {
   title: string
   period: string
   stack: string[]
-  repo: string
+  repo?: string
+  backendRepo?: string
+  frontendRepo?: string
   features: string
 }[] = [
   {
     title: "Turf Booking Management System",
     period: "2025-2026",
-    stack: ["Spring Boot", "React", "PostgreSQL", "JWT", "Recharts"],
-    repo: "https://github.com/tejashwiniprashannaa/Sports-Turf-Management-System",
+    stack: [
+      "Spring Boot",
+      "React",
+      "PostgreSQL",
+      "JWT",
+      "Recharts",
+    ],
+    repo:
+      "https://github.com/tejashwiniprashannaa/Sports-Turf-Management-System",
     features:
-      "Engineered a decoupled full-stack architecture with rigid role-based access control (Admin vs. User isolation). Implemented secure authentication layers via JWT and BCrypt password encryption. Crafted a custom slot-conflict database validation engine in Java to maintain strict transactional consistency. Integrated a clean analytics frontend panel utilizing React and Recharts tracking live data flows.",
+      "Engineered a decoupled full-stack architecture with role-based access control. Implemented secure authentication using JWT and BCrypt. Developed slot-conflict validation to prevent overlapping bookings. Built an analytics dashboard with React and Recharts for booking insights.",
   },
   {
-  title: "Real-Time Kanban Management System",
-  period: "2026",
-  stack: [
-    "Java (Spring Boot)",
-    "React",
-    "MySQL",
-    "Hibernate/JPA",
-    "WebSockets (STOMP)",
-  ],
-  repo: "Backend: https://github.com/tejashwiniprashannaa/trello-backend | Frontend: https://github.com/tejashwiniprashannaa/trello-frontend",
-  features:
-    "Architected a full-stack Kanban task management application using a decoupled Controller-Service-Repository architecture for modularity and scalability. Engineered RESTful APIs to manage boards, columns, and tasks with persistent storage using Hibernate/JPA and MySQL. Implemented real-time synchronization using WebSockets (STOMP), enabling instant board updates across multiple connected clients without page refreshes. Designed a responsive drag-and-drop Kanban interface supporting To Do, In Progress, and Done workflows to improve project tracking and collaboration.",
-},
+    title: "Real-Time Kanban Management System",
+    period: "2026",
+    stack: [
+      "Java (Spring Boot)",
+      "React",
+      "MySQL",
+      "Hibernate/JPA",
+      "WebSockets (STOMP)",
+    ],
+    backendRepo:
+      "https://github.com/tejashwiniprashannaa/trello-backend",
+    frontendRepo:
+      "https://github.com/tejashwiniprashannaa/trello-frontend",
+    features:
+      "Architected a full-stack Kanban task management application using a layered Controller-Service-Repository architecture. Developed RESTful APIs for boards, columns, and tasks with Hibernate/JPA and MySQL. Implemented real-time synchronization using WebSockets (STOMP) to instantly update connected clients. Designed a responsive drag-and-drop Kanban interface supporting To Do, In Progress, and Done workflows.",
+  },
 ]
 
 export const education = {
