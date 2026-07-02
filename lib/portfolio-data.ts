@@ -86,13 +86,19 @@ export const projects: {
       "Engineered a decoupled full-stack architecture with rigid role-based access control (Admin vs. User isolation). Implemented secure authentication layers via JWT and BCrypt password encryption. Crafted a custom slot-conflict database validation engine in Java to maintain strict transactional consistency. Integrated a clean analytics frontend panel utilizing React and Recharts tracking live data flows.",
   },
   {
-    title: "Weather Web Application",
-    period: "2026",
-    stack: ["HTML5", "CSS3", "JavaScript", "OpenWeatherMap API"],
-    repo: "https://github.com/tejashwiniprashannaa/PRODIGY_WD_05",
-    features:
-      "Built a dynamic app interacting with the OpenWeatherMap REST API using asynchronous async/await pipelines. Formulated intuitive client-side error handling states and real-time DOM updates.",
-  },
+  title: "Real-Time Kanban Management System",
+  period: "2026",
+  stack: [
+    "Java (Spring Boot)",
+    "React",
+    "MySQL",
+    "Hibernate/JPA",
+    "WebSockets (STOMP)",
+  ],
+  repo: "Backend: https://github.com/tejashwiniprashannaa/trello-backend | Frontend: https://github.com/tejashwiniprashannaa/trello-frontend",
+  features:
+    "Architected a full-stack Kanban task management application using a decoupled Controller-Service-Repository architecture for modularity and scalability. Engineered RESTful APIs to manage boards, columns, and tasks with persistent storage using Hibernate/JPA and MySQL. Implemented real-time synchronization using WebSockets (STOMP), enabling instant board updates across multiple connected clients without page refreshes. Designed a responsive drag-and-drop Kanban interface supporting To Do, In Progress, and Done workflows to improve project tracking and collaboration.",
+},
 ]
 
 export const education = {
